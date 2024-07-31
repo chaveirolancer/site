@@ -1,0 +1,8 @@
+.manuta{width: 100%;
+    font-size: 30px;
+    font-family: open sans;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;}
