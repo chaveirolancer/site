@@ -7,8 +7,160 @@
 	<title>Chaveiro Lancer | Chaveiro 24 Horas em Campinas</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="icon" href="assets/image/favicon.png" type="image/png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script>
+jQuery.noConflict(); // Evita conflitos com outras bibliotecas
+  jQuery(document).ready(function($) { // Use o alias $ dentro desta função
+    $('.carousel').slick({
+    // Navegação
+    arrows: true, // Habilita setas de navegação
+    dots: false, // Exibe pontos de navegação
+    // Autoplay
+    autoplay: true, // Habilita autoplay
+    autoplaySpeed: 3000, // Intervalo de tempo entre transições (em milissegundos)
+    // Transição
+    speed: 600, // Velocidade da animação de transição (em milissegundos)
+    fade: false, // Habilita transição de fade em vez de slide
+	slidesToShow: 4, // Número de slides visiveis
+    slidesToScroll: 1, // Número de slides a serem rolados
+    // Responsividade
+    responsive: [
+      {
+        breakpoint: 980, // Tablet
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 767, // Mobile
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+});
+</script>
+
+
 </head>
 <body>
-<div class="manuta">Site em construção</div>
+<div class="menu-topo secao">
+	<div class="conteudo">
+	<div class="logo">
+		<img src="file:///Users/marcos/Desktop/Site%20Chaveiro%2024hras/assets/image/logo-menu.png" alt="Logo Chaveiro Lancer">
+	</div>
+	<div class="menu">
+		<ul>
+			<li><a href="#sobre">Sobre</a></li>
+			<li><a href="#servicos">Serviços</a></li>
+			<li><a href="#local">Como chegar</a></li>
+			<li><a href="#contato">Contato</a></li>
+		</ul>
+	</div>
+</div>
+</div>
+
+<div id="sobre" class="banner secao">
+	<div class="conteudo">
+		<div class="texto">
+			<h1>Chaveiro Lancer, <u>Chaveiro 24 horas</u> em campinas</h1>
+			<p>O <strong>Chaveiro Lancer</strong>, está localizado na Rua Maria Monteiro, 1203, no bairro Cambuí, em Campinas-SP, é uma opção confiável para serviços de chaveiro. Eles oferecem <strong>chaves automotivas e residenciais, além de trabalhar com fechaduras digitais e cofres</strong>. Se você precisar de assistência a qualquer hora do dia ou da noite, o Chaveiro Lancer está lá para ajudar!</p>
+
+			<p class="cta">Atendemos a domicílio</p>
+		</div>
+		<div class="contatos">
+			<div class="botao"><a href="https://linkwhats.app/28f7f0" title="Clique para entrar em contato" target="_blank"> <img src="assets/image/icone-whatsapp.png" alt="Ícone Whatsapp"> 19 99384 7433</a></div>
+			<div class="botao"><a href="https://linkwhats.app/132d66" title="Clique para entrar em contato" target="_blank"> <img src="assets/image/icone-whatsapp.png" alt="Ícone Whatsapp"> 19 3254 2767</a></div>
+			<div class="botao"><a href="https://linkwhats.app/34c210" title="Clique para entrar em contato" target="_blank"> <img src="assets/image/icone-whatsapp.png" alt="Ícone Whatsapp"> 19 97416 7567</a></div>
+			<div class="botao phone"><a href="tel:+551932555270" title="Clique para entrar em contato" target="_blank"> <img src="assets/image/icone-telefone.png" alt="Ícone Telefone"> 19 3255 5270</a></div>
+		</div>
+	</div>
+</div>
+
+<div id="servicos" class="slider secao">
+	<div class="conteudo carousel">
+		<div class="coluna">
+			<img src="assets/image/abertura-de-residencias.jpg" alt="Imagem Abertura de Residencias">
+			<p class="titulo">Abertura de Residências</p>
+		</div>
+		<div class="coluna">
+			<img src="assets/image/abertura-de-automoveis.jpg" alt="Imagem Abertura de Automóveis">
+			<p class="titulo">Abertura de Automóveis</p>
+		</div>
+		<div class="coluna">
+			<img src="assets/image/chaves-codificadas.jpg" alt="Imagem Chaves Codificadas">
+			<p class="titulo">Chaves Codificadas</p>
+		</div>
+		<div class="coluna">
+			<img src="assets/image/instalacao-e-troca-de-fechadduras-eletronicas.jpg" alt="Imagem Instalação de fechaduras eletronicas">
+			<p class="titulo">Vendas e instalação de fechaduras digitais</p>
+		</div>
+		<div class="coluna">
+			<img src="assets/image/instalacao-e-troca-de-fechaduras.jpg" alt="Imagem Instalação e troca de fechaduras">
+			<p class="titulo">Instalação e troca de fechaduras</p>
+		</div>
+		<div class="coluna">
+			<img src="assets/image/instalacao-e-troca-de-miolos.jpg" alt="Imagem Instalação e troca de miolos">
+			<p class="titulo">Instalação e troca de miolos</p>
+		</div>
+		<div class="coluna">
+			<img src="assets/image/cofres.jpg" alt="Imagem Cofres">
+			<p class="titulo">Cofres</p>
+		</div>
+	</div>
+</div>
+
+<div id="contato" class="secao">
+	<div class="conteudo">
+		<div class="titulo-topo"><h2>Atendimento 24 horas</h2></div>
+		<div class="infos">
+		<div class="contatos">
+			<div class="inner">
+				<a href="https://linkwhats.app/28f7f0" target="_blank">
+				<img src="assets/image/icone-whats-escuro.png" alt="Ícone Whatsapp">
+				<p class="titulo">(19)99384-7433</p>
+			</a>
+ 			</div>
+			<div class="inner">
+				<a href="https://linkwhats.app/132d66" target="_blank">
+				<img src="assets/image/icone-whats-escuro.png" alt="Ícone Whatsapp">
+				<p class="titulo">(19) 3254-2767</p>
+				</a>
+ 			</div>
+			 <div class="inner">
+				<a href="https://linkwhats.app/34c210" target="_blank">
+				<img src="assets/image/icone-whats-escuro.png" alt="Ícone Whatsapp">
+				<p class="titulo">(19)97416-7567</p>
+				</a>
+ 			</div>
+			<div class="inner">
+				<a href="tel:1932555270" target="_blank">
+				<img src="assets/image/icone-telefone-escuro.png" alt="Ícone Telefone">
+				<p class="titulo">(19) 3255-5270</p>
+			</a>
+ 			</div>
+			
+			
+		</div>
+		<div class="imagem">
+			<img src="assets/image/foto-chaveiro-lancer.png" alt="Imagem ">
+		</div>
+	</div>
+	</div>
+</div>
+<div id="local">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.5352360053234!2d-47.05560942469003!3d-22.893620979264302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8cf515b826b91%3A0xc151bf6c56310cbe!2sChaveiro%20Lancer%20Campinas%2024%20hrs!5e0!3m2!1spt-BR!2sbr!4v1722607631555!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
 </body>
+<footer>
+	<div class="conteudo rodape">
+		<p>Copyright – 2024 Todos os direitos reservados.</p>
+	</div>
+</footer>
 </html>

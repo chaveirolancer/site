@@ -1,8 +1,69 @@
-.manuta{width: 100%;
-    font-size: 30px;
-    font-family: open sans;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;}
+body {margin: 0 !important;}
+p, h1, h2, ul, a {font-family: 'montserrat';}
+.secao {display: flex; justify-content: center;}
+.secao .conteudo {max-width: 1240px; width: 80%;}
+
+
+.banner {text-align: center; padding: 250px 0; background: url('file:///Users/marcos/Desktop/Site%20Chaveiro%2024hras/assets/image/banner-bg.webp'); background-attachment: fixed; background-size: cover;}
+.banner h1, .banner p {color: #fff;}
+.banner p {font-size: 18px;}
+.banner p.cta {font-size: 35px; text-transform: uppercase; font-weight: 700;}
+.banner .conteudo {display: flex;flex-direction: column; align-items: center;}
+.banner .conteudo .contatos {max-width: 700px;}
+.banner .conteudo .contatos .botao a {color: #fff; text-decoration: none !important; background-color: #25D366; padding: 10px 40px;display: inline-block; width: 250px;border-radius: 5px;font-size: 20px; transition: ease-in-out .4s;}
+.banner .conteudo .contatos .botao.phone a {background-color: #006AFF !important;}
+.banner .conteudo .contatos .botao a > img {width: 20px;vertical-align: middle;margin-right: 5px;}
+.banner .conteudo .contatos .botao a:hover {transform: scale(0.98);background-color: #075E54; transition: ease-in-out .4s;}
+.banner .conteudo .contatos .botao.phone a:hover {background-color: #00B2FF !important;}
+
+#servicos {padding-bottom: 100px; margin-top: -150px;}
+#servicos .coluna .titulo {width: 80%;background: #1e1e2a;text-align: center;color: #fff;margin-top: -25px;z-index: 10;position: relative;left: 10%;min-height: 60px;display: flex;align-items: center;    justify-content: center; border-radius: 5px;}
+#servicos .coluna {display: flex; justify-content: center; flex-direction: column;}
+.slick-slide img {max-width: 95% !important; margin-left: 2.5% !important;}
+.slick-prev::before, .slick-next::before {color: #E16A19 !important; font-size: 40px !important;}
+.slick-prev {left: -50px !important;}
+
+.menu-topo {background: #1c3872;}
+.menu-topo a {color: #fff; text-decoration: none;}
+.menu-topo .conteudo {display: flex; align-items: center;}
+.menu-topo .conteudo .logo {width: 30%;}
+.menu-topo .conteudo .menu {width: 70%;}
+.menu-topo .conteudo .menu ul {display: flex; justify-content: space-between; list-style: none; font-size: 20px; color: #fff;}
+
+#contato {background: #ececec; padding-bottom: 80px;}
+#contato .conteudo .infos .contatos .inner {width: 47%; display: inline-block; margin: 5px 1%; text-align: center; background-color: #fff; z-index: 10; position: relative; padding: 50px 0; border-radius: 5px;}
+#contato .conteudo .infos .contatos .inner img {max-width: 60px;}
+#contato .conteudo .infos .contatos .inner a {text-decoration: none !important;}
+#contato .conteudo .infos .contatos .inner p {position: relative;}
+#contato .conteudo .infos .contatos .inner p::before {content: ""; position: absolute; width: 0; height: 3px; left:  50%; top: -5px; background-color: #1C3872;; transition: ease-in-out .4s;}
+#contato .conteudo .infos .contatos .inner:hover p::before {width: 50%; left: 25%; transition: ease-in-out .4s;}
+#contato .conteudo .infos .imagem img {max-width: 100%;}
+
+
+#contato .conteudo .titulo-topo {background: #1E1E2A;padding: 15px 0;text-align: center;margin-top: -36px;margin-bottom: 40px; border-radius: 5px;}
+#contato .conteudo .titulo-topo h2 {color: #fff; text-transform: uppercase; font-size: 40px; margin: 0 !important;}
+
+footer {display: flex; justify-content: center; background: #1C3872; padding: 2px 0; margin-top: -10px;}
+footer .conteudo .coluna.second {display: flex; align-items: center;}
+footer .conteudo p {color: #ffff; font-family: montserrat; font-size: 16px; text-align: center; width: 100%;}
+
+@media only screen and (min-width: 981px){
+    .banner .conteudo .contatos .botao{width: 49%; display: inline-block; text-align: center; margin-bottom: 20px;}
+    .menu-topo {position: fixed; width: 100%; z-index: 999999999999}
+    #servicos .conteudo {display: flex;}
+    #contato .conteudo .infos {display: flex; align-items: center;}
+    #contato .conteudo .infos .contatos {width: 56%; margin-right: -5% !important;}
+    #contato .conteudo .infos .imagem {width: 60%;}
+    footer .conteudo {display: flex; max-width: 1240px; width: 80%;}
+    footer .conteudo .coluna {width: 30%;}
+    footer .conteudo .coluna:not(.third) {margin-right: 5%;}
+}
+
+@media only screen and (max-width: 980px){
+    .banner {padding-top: 60px;}
+    .secao.slider .conteudo.carousel {width: 60% !important;}
+    .banner .conteudo .contatos .botao a {margin-bottom: 30px;}
+    .menu-topo .conteudo .menu ul {display: none;}
+    #contato .conteudo .titulo-topo h2 {font-size: 35px !important;}
+
+}
