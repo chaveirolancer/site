@@ -4,7 +4,7 @@ p, h1, h2, ul, a {font-family: 'montserrat';}
 .secao .conteudo {max-width: 1240px; width: 80%;}
 
 
-.banner {text-align: center; padding: 250px 0; background: url('assets/image/banner-bg.webp'); background-attachment: fixed; background-size: cover;}
+.banner {text-align: center; padding: 250px 0; background: url('/assets/image/banner-bg.webp'); background-attachment: fixed; background-size: cover;}
 .banner h1, .banner p {color: #fff;}
 .banner p {font-size: 18px;}
 .banner p.cta {font-size: 35px; text-transform: uppercase; font-weight: 700;}
