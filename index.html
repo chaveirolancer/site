@@ -84,26 +84,7 @@ jQuery.noConflict(); // Evita conflitos com outras bibliotecas
 			<div class="botao phone"><a href="tel:+5519993847433" title="Clique para entrar em contato" target="_blank"> <img src="assets/image/icone-telefone.png" alt="Ícone Telefone"> 19 99384 7433</a></div>
 			<div class="botao phone"><a href="tel:+5519974167567" title="Clique para entrar em contato" target="_blank"> <img src="assets/image/icone-telefone.png" alt="Ícone Telefone"> 19 97416 7567</a></div>
 		</div>
-		<script>
-        function mostrarDivs() {
-            var agora = new Date();
-            var horas = agora.getHours();
-            var contatosDia = document.querySelector('.dia');
-            var contatosNoite = document.querySelector('.noite');
 
-            if (horas >= 9 && horas < 18) {
-                contatosDia.style.display = 'block';
-                contatosNoite.style.display = 'none';
-            } else {
-                contatosDia.style.display = 'none';
-                contatosNoite.style.display = 'block';
-            }
-        }
-
-        mostrarDivs();
-        setInterval(mostrarDivs, 60000); // Verificar a cada minuto
-    </script>
-	</div>
 </div>
 
 <div id="servicos" class="slider secao">
@@ -143,7 +124,7 @@ jQuery.noConflict(); // Evita conflitos com outras bibliotecas
 	<div class="conteudo">
 		<div class="titulo-topo"><h2>Atendimento 24 horas</h2></div>
 		<div class="infos">
-		<div class="contatos">
+		<div class="contatos dia">
 			<div class="inner">
 				<a href="https://linkwhats.app/28f7f0" target="_blank">
 				<img src="assets/image/icone-whats-escuro.png" alt="Ícone Whatsapp">
@@ -171,6 +152,23 @@ jQuery.noConflict(); // Evita conflitos com outras bibliotecas
 			
 			
 		</div>
+			<div class="contatos noite">
+			<div class="inner">
+				<a href="tel:+5519993847433" target="_blank">
+				<img src="assets/image/icone-telefone-escuro.png" alt="Ícone Telefone">
+				<p class="titulo">(19)99384-7433</p>
+			</a>
+ 			</div>
+			
+			 <div class="inner">
+				<a href="tel:+5519974167567" target="_blank">
+				<img src="assets/image/icone-telefone-escuro.png" alt="Ícone Telefone">
+				<p class="titulo">(19)97416-7567</p>
+				</a>
+ 			</div>
+			
+			
+		</div>
 		<div class="imagem">
 			<img src="assets/image/foto-chaveiro-lancer.png" alt="Imagem ">
 		</div>
@@ -180,6 +178,25 @@ jQuery.noConflict(); // Evita conflitos com outras bibliotecas
 <div id="local">
 	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.5352360053234!2d-47.05560942469003!3d-22.893620979264302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8cf515b826b91%3A0xc151bf6c56310cbe!2sChaveiro%20Lancer%20Campinas%2024%20hrs!5e0!3m2!1spt-BR!2sbr!4v1722607631555!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
+	<script>
+        function mostrarDivs() {
+            var agora = new Date();
+            var horas = agora.getHours();
+            var contatosDia = document.querySelectorAll('.dia');
+            var contatosNoite = document.querySelectorAll('.noite');
+
+            contatosDia.forEach(function(div) {
+                div.style.display = (horas >= 9 && horas < 18) ? 'block' : 'none';
+            });
+
+            contatosNoite.forEach(function(div) {
+                div.style.display = (horas >= 18 || horas < 9) ? 'block' : 'none';
+            });
+        }
+
+        mostrarDivs();
+        setInterval(mostrarDivs, 60000); // Verificar a cada minuto
+    </script>
 </body>
 <footer>
 	<div class="conteudo rodape">
