@@ -13,6 +13,7 @@ p, h1, h2, ul, a {font-family: 'montserrat';}
 .banner .conteudo .contatos .botao a {color: #fff; text-decoration: none !important; background-color: #25D366; padding: 10px 40px;display: inline-block; width: 250px;border-radius: 5px;font-size: 20px; transition: ease-in-out .4s;}
 .banner .conteudo .contatos .botao.phone a {background-color: #006AFF !important;}
 .banner .conteudo .contatos .botao a > img {width: 20px;vertical-align: middle;margin-right: 5px;}
+.banner .conteudo .contatos.noite .botao {margin: 1% !important}
 .banner .conteudo .contatos .botao a:hover {transform: scale(0.98);background-color: #075E54; transition: ease-in-out .4s;}
 .banner .conteudo .contatos .botao.phone a:hover {background-color: #00B2FF !important;}
 
