@@ -81,8 +81,8 @@ jQuery.noConflict(); // Evita conflitos com outras bibliotecas
 			<div class="botao phone"><a href="tel:+551932555270" title="Clique para entrar em contato" target="_blank"> <img src="assets/image/icone-telefone.png" alt="Ícone Telefone"> 19 3255 5270</a></div>
 		</div>
 		<div class="contatos noite">
-			<div class="botao phone"><a href="https://linkwhats.app/28f7f0" title="Clique para entrar em contato" target="_blank"> <img src="assets/image/icone-whatsapp.png" alt="Ícone Whatsapp"> 19 99384 7433</a></div>
-			<div class="botao phone"><a href="https://linkwhats.app/34c210" title="Clique para entrar em contato" target="_blank"> <img src="assets/image/icone-whatsapp.png" alt="Ícone Whatsapp"> 19 97416 7567</a></div>
+			<div class="botao phone"><a href="tel:+5519993847433" title="Clique para entrar em contato" target="_blank"> <img src="assets/image/icone-telefone.png" alt="Ícone Telefone"> 19 99384 7433</a></div>
+			<div class="botao phone"><a href="tel:+5519974167567" title="Clique para entrar em contato" target="_blank"> <img src="assets/image/icone-telefone.png" alt="Ícone Telefone"> 19 97416 7567</a></div>
 		</div>
 		<script>
         function mostrarDivs() {
@@ -92,11 +92,11 @@ jQuery.noConflict(); // Evita conflitos com outras bibliotecas
             var contatosNoite = document.querySelector('.noite');
 
             if (horas >= 9 && horas < 18) {
-                contatosDia.style.display = 'none';
-                contatosNoite.style.display = 'block';
-            } else {
                 contatosDia.style.display = 'block';
                 contatosNoite.style.display = 'none';
+            } else {
+                contatosDia.style.display = 'none';
+                contatosNoite.style.display = 'block';
             }
         }
 
