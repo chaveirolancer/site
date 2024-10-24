@@ -74,12 +74,35 @@ jQuery.noConflict(); // Evita conflitos com outras bibliotecas
 			<p><strong style="font-size: 24px;">Confiável em serviços de chaveiro desde 1989!</strong></p>
 			<p class="cta">Atendemos a domicílio</p>
 		</div>
-		<div class="contatos">
+		<div class="contatos dia">
 			<div class="botao"><a href="https://linkwhats.app/28f7f0" title="Clique para entrar em contato" target="_blank"> <img src="assets/image/icone-whatsapp.png" alt="Ícone Whatsapp"> 19 99384 7433</a></div>
 			<div class="botao"><a href="https://linkwhats.app/132d66" title="Clique para entrar em contato" target="_blank"> <img src="assets/image/icone-whatsapp.png" alt="Ícone Whatsapp"> 19 3254 2767</a></div>
 			<div class="botao"><a href="https://linkwhats.app/34c210" title="Clique para entrar em contato" target="_blank"> <img src="assets/image/icone-whatsapp.png" alt="Ícone Whatsapp"> 19 97416 7567</a></div>
 			<div class="botao phone"><a href="tel:+551932555270" title="Clique para entrar em contato" target="_blank"> <img src="assets/image/icone-telefone.png" alt="Ícone Telefone"> 19 3255 5270</a></div>
 		</div>
+		<div class="contatos noite">
+			<div class="botao phone"><a href="https://linkwhats.app/28f7f0" title="Clique para entrar em contato" target="_blank"> <img src="assets/image/icone-whatsapp.png" alt="Ícone Whatsapp"> 19 99384 7433</a></div>
+			<div class="botao phone"><a href="https://linkwhats.app/34c210" title="Clique para entrar em contato" target="_blank"> <img src="assets/image/icone-whatsapp.png" alt="Ícone Whatsapp"> 19 97416 7567</a></div>
+		</div>
+		<script>
+        function mostrarDivs() {
+            var agora = new Date();
+            var horas = agora.getHours();
+            var contatosDia = document.querySelector('.contatos-dia');
+            var contatosNoite = document.querySelector('.contatos-noite');
+
+            if (horas >= 9 && horas < 18) {
+                contatosDia.style.display = 'block';
+                contatosNoite.style.display = 'none';
+            } else {
+                contatosDia.style.display = 'none';
+                contatosNoite.style.display = 'block';
+            }
+        }
+
+        mostrarDivs();
+        setInterval(mostrarDivs, 60000); // Verificar a cada minuto
+    </script>
 	</div>
 </div>
 
