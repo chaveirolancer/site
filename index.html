@@ -88,8 +88,8 @@ jQuery.noConflict(); // Evita conflitos com outras bibliotecas
         function mostrarDivs() {
             var agora = new Date();
             var horas = agora.getHours();
-            var contatosDia = document.querySelector('.contatos.dia');
-            var contatosNoite = document.querySelector('.contatos.noite');
+            var contatosDia = document.querySelector('.dia');
+            var contatosNoite = document.querySelector('.noite');
 
             if (horas >= 9 && horas < 18) {
                 contatosDia.style.display = 'block';
