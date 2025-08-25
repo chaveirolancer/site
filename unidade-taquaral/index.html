@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chaveiro Lancer | Unidade Taquaral</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      color: #1a1a1a;
+    }
+    header {
+      background: #0e1a36;
+      color: white;
+      padding: 15px 0;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero {
+      background: rgba(14, 26, 54, 0.9);
+      color: white;
+      text-align: center;
+      padding: 160px 20px;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      margin-bottom: 20px;
+      font-size: 1.2rem;
+    }
+    .buttons {
+      margin-top: 40px;
+      display: flex;
+    }
+
+    .menu .buttons{
+      margin-top: 0 !important;
+    }
+    .hero .buttons{
+      justify-content: center;
+    }
+
+    .buttons a {
+      background: #25D366;
+      padding: 12px 20px;
+      margin: 5px;
+      text-decoration: none;
+      color: #ffffff;
+      border-radius: 5px;
+      font-weight: bold;
+      display: block;
+      width: 200px;
+      text-align: center;
+    }
+    section {
+      padding: 40px 20px;
+      background: white;
+      margin-bottom: 20px;
+    }
+    section h2 {
+      text-align: center;
+      color: #0e1a36;
+      margin-bottom: 30px;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      text-align: center;
+    }
+    .service-box {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .about {
+      background: #0e1a36;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 30px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      align-items: center;
+      overflow: hidden;
+    }
+    
+    .about-text h3 {
+      color: #ffcc00;
+      font-size: 2.1rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    footer {
+      background: #0e1a36;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .mapa {
+      margin-bottom: -4px;
+    }
+
+
+    @media only screen and (min-width: 981px){
+      .about {
+        padding: 0 !important;
+        padding-left: 40px !important;
+      }
+        .about-text {
+      width: 40%;
+      padding-right: 20px;
+    }
+    .mapa {
+        width: 60%;
+    }
+    }
+    @media only screen and (max-width: 980px){
+        .mapa {width: 100% !important;}
+        .about {flex-direction: column; width: 92%; padding: 40px 0 0 0;}        
+        .about-text {width: 90%; 
+          padding-bottom: 40px; 
+          display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;}
+
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container menu">
+    <nav>
+      <img src="/assets/images/logo-menu.png">
+      <div class="buttons">
+        <a href="#">Entrar em contato</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <h1>Chaveiro Lancer</h1>
+  <p>No Chaveiro Lancer, você encontra serviços especializados para facilitar seu dia a dia: cópias de chaves, troca de baterias para chaves e controles, afiação profissional de alicates, facas e tesouras, além de abertura de portas com agilidade e segurança.</p>
+  <div class="buttons">
+    <a href="#">Entrar em contato</a>
+  </div>
+</div>
+
+<section>
+  <h2>Serviços</h2>
+  <div class="services container">
+    <div class="service-box">Troca de baterias: chaves, controles, etc.</div>
+    <div class="service-box">Afiações: alicates, facas, tesouras.</div>
+    <div class="service-box">Cópias de chaves</div>
+    <div class="service-box">Aberturas de portas</div>
+  </div>
+</section>
+
+<section class="about container">
+  <div class="about-text">
+    <h3>Localização</h3>
+    <p>Estamos no coração do bairro Taquaral, em Campinas, na Rua Paula Bueno, 185, esquina com a Rua Bartolomeu da Silva. Fácil acesso para clientes da região e cidades vizinhas, garantindo praticidade e rapidez no atendimento.</p>
+    <div class="buttons">
+      <a href="#">Entrar em contato</a>
+    </div>
+  </div>
+  <div class="mapa">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1288.3655928195992!2d-47.0556922068203!3d-22.885382366851143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c5feeeaed9cb%3A0xc05ec71749a137b1!2sR.%20Bartolomeu%20Bueno%20da%20Silva%2C%20185%20-%20Parque%20Taquaral%2C%20Campinas%20-%20SP%2C%2013076-230!5e0!3m2!1spt-BR!2sbr!4v1756128890056!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+
+
+<footer>
+  <p>© 2025 Chaveiro Lancer - Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
